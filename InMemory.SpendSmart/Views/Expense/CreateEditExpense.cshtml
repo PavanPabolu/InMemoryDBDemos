@@ -9,7 +9,8 @@
 
 
 <div class="text-center">
-    <h1 class="display-4">Create / Edit an Expense:</h1>
+    @* <h1 class="display-4">Create / Edit an Expense:</h1> *@
+    <h1 class="display-4">@ViewData["SectionTitle"]?.ToString():</h1>
 </div>
 <form asp-action="CreateEditExpense" asp-controller="Expense">
     <input hidden type="number" asp-for="Id" class="form-control" placeholder="0" /> <!--value="@Model.Id"-->
